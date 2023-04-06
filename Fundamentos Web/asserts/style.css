@@ -34,11 +34,14 @@ font-size: 20px;
 }
 .musica{
    
-    max-height: 500px;
-    flex-direction: column;
-    padding: 20px;
-    background-color:#E1E4FD ;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color:#E1E4FD ;
+  box-shadow: 0px 4px 4px #4A507D;
+  flex-wrap: wrap;
+  
  }
 
 .containerPerfil{
@@ -73,6 +76,7 @@ font-size: 20px;
     border: 2px solid;
     box-shadow: 6px 4px 8px 4px;
     border-radius: 8px;
+    flex-wrap: wrap;
 
 }
 .listaimagens img:hover{
@@ -108,7 +112,7 @@ form {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: Arial, sans-serif;
   }
   

@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Contato</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="asserts/style.css">
 </head>
 <body>
 
@@ -19,20 +19,21 @@
    <h2>Entre em contato comigo</h2>    <br><br>   
 
    <div class="contact">
-         <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
+         <form>         
+             <label for="name">Nome</label>
+              <input type="text" id="nome" name="name" placeholder="Insira seu Nome Completo" required onkeyup='adicionarNome()'> 
+              <div id='textoNome'></div> <br>
+             
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
+              <input type="email" id="email"  name="email" placeholder="Insira seu email" required onkeyup='adicionarEmail()'> 
+              <div id='textoEmail'></div> <br>
+              
+              <label for="message">Mensagem</label>
+              <textarea id="message" cols="60" rows="5" onkeyup="validaMessage()" name="message" placeholder="Digite uma mensagem" required></textarea>
+              <div id='textoMessage'></div> 
+
+               <br><br>
+            <button onclick="enviar()" >Enviar</button>
           </form>
       </div>
 
@@ -46,6 +47,6 @@
       </p> 
    </footer>
 
-   
+   <script src="asserts/app.js"></script>
 </body>
 </html>
